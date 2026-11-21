@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshFold - Laundry Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">FreshFold</div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+
+            <div class="username">Welcome, User</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Revitalize Your Clothes with Expert Laundry Services!</h1>
+            <p>
+                From premium dry cleaning to swift wash and fold,
+                we deliver care and convenience. Schedule a pickup
+                and rediscover the freshness of your clothes today!
+            </p>
+            <button onclick="scrollToServices()">Book a Service Today</button>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1604335399105-4c3b7c8b7e7c?w=600" alt="Laundry Service">
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="achievements" id="about">
+        <h2>Our Achievements</h2>
+        <div>
+            <h3>15+</h3>
+            <p>Laundry Services</p>
+        </div>
+        <div>
+            <h3>240+</h3>
+            <p>Happy Customers</p>
+        </div>
+        <div>
+            <h3>2+ Yrs</h3>
+            <p>Experience</p>
+        </div>
+    </section>
+
+    <!-- Booking Services -->
+    <section class="booking-section" id="services">
+
+        <div class="services-list">
+            <h2>Our Services</h2>
+            <p>Select your preferred laundry services.</p>
+            <div id="serviceList"></div>
+            <p class="cart-info">Add the items to the cart and book now.</p>
+        </div>
+
+        <div class="cart-container">
+            <h2>Added Items</h2>
+
+            <div id="cartItems">
+                <p class="empty-cart">No Items Added</p>
+            </div>
+
+            <div class="total">
+                <strong>Total Amount</strong>
+                <strong id="totalAmount">₹0.00</strong>
+            </div>
+
+            <form id="bookingForm">
+                <h2>Book Now</h2>
+
+                <input type="text" id="fullName" placeholder="Full Name" required>
+
+                <input type="email" id="email" placeholder="Email Address" required>
+
+                <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" maxlength="10" required>
+
+                <button type="submit" id="bookButton">Book Now</button>
+
+                <p id="bookingMessage"></p>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Quality Description -->
+    <section class="quality-section">
+        <div class="quality-card">
+            <i class="fa-solid fa-shirt"></i>
+            <h3>Premium Services</h3>
+            <p>High-quality laundry care for your clothes.</p>
+        </div>
+
+        <div class="quality-card">
+            <i class="fa-solid fa-headset"></i>
+            <h3>Quick Support</h3>
+            <p>Friendly assistance whenever you need it.</p>
+        </div>
+
+        <div class="quality-card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Timely Delivery</h3>
+            <p>Fast and convenient delivery services.</p>
+        </div>
+
+        <div class="quality-card">
+            <i class="fa-solid fa-tags"></i>
+            <h3>Affordable Prices</h3>
+            <p>Quality laundry services at reasonable prices.</p>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+
+        <form id="newsletterForm">
+            <input type="text" id="subscriberName" placeholder="Full Name" required>
+            <input type="email" id="subscriberEmail" placeholder="Email Address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <p id="newsletterMessage"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-column">
+            <h2>FreshFold</h2>
+            <p>Making laundry simple, fresh and convenient.</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Important Links</h3>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>mail@freshfold.com</p>
+            <p>+91 91234 56780</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+        </div>
+    </footer>
+
+    <p class="copyright">© 2026 FreshFold. All Rights Reserved.</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
